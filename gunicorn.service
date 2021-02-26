@@ -1,0 +1,10 @@
+[Unit]
+Description=gunicorn daemon
+after=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/new_chatapp-master/fundoo
+ExecStart=/home/ubuntu/env/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 fundoo.wsgi:application
+[Install]
+WantedBy=multi-user.target
