@@ -12,10 +12,10 @@ hooks:
     - location: /scripts/install_dependencies.sh
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: /scripts/change_File.sh
-      timeout: 300
-      runas: root
+  #AfterInstall:
+    #- location: /scripts/change_File.sh
+      #timeout: 300
+      #runas: root
   ApplicationStart:
     - location: /scripts/start_server.sh
       timeout: 300
