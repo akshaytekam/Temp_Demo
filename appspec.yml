@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/new_chatapp-master/
+    destination: /home/ec2-user/new_chatapp/
   - source: /gunicorn.service
     destination: /etc/systemd/system/
   - source: /fundo
