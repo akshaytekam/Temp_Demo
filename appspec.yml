@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /fundoo/manage.py
     destination: /home/ec2-user/Demo_App/
   - source: /gunicorn.service
     destination: /etc/systemd/systemm/
