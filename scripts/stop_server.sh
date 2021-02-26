@@ -3,5 +3,5 @@
 isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
     sudo systemctl stop gunicorn
-    sudo systemctl stop nginx
+    #sudo systemctl stop nginx
 fi
