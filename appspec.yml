@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ec2-user/Demo_App/
   - source: /gunicorn.service
-    destination: /etc/systemd/system/
+    destination: /etc/systemd/systemm/
   - source: /fundo
     destination: /etc/nginx/sites-available/
 hooks:
